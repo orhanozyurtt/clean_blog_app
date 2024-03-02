@@ -14,7 +14,7 @@ const port = process.env.PORT || 5000;
 const con =
   'mongodb+srv://orhanoz763:WlGKIxIwVS3WIQj9@cluster0.0wtlxwg.mongodb.net/';
 mongoose.connect(con);
-///
+///yo
 app.use(express.static('public'));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
