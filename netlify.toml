@@ -1,12 +1,8 @@
+# netlify.toml
+
 [build]
-  command = "npm start"  # Projeyi başlatmak için kullanılacak komut
-  publish = "public"      # Derlenen dosyaların bulunduğu dizin
+  command = "npm start"  # Node.js projenizi başlatan komutu buraya ekleyin
+  publish = "public"  # Derlenen dosyaların bulunduğu klasörü belirtin
 
-[dev]
-  command = "npm start"   # Geliştirme sunucusunu başlatmak için kullanılacak komut
-  publish = "public"      # Geliştirme sunucusunun yayınladığı dizin
-
-[[redirects]]
-  from = "/*"             # Tüm isteklerin
-  to = "/index.html"      # index.html'e yönlendirilmesi
-  status = 200            # 200 (OK) durum koduyla
+[functions]
+  directory = "functions"  # Netlify fonksiyonlarınızın bulunduğu klasörü belirtin
