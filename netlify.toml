@@ -1,8 +1,0 @@
-# netlify.toml
-
-[build]
-  command = "npm start"  # Node.js projenizi başlatan komutu buraya ekleyin
-  publish = "public"  # Derlenen dosyaların bulunduğu klasörü belirtin
-
-[functions]
-  directory = "functions"  # Netlify fonksiyonlarınızın bulunduğu klasörü belirtin
